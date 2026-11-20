@@ -48,7 +48,7 @@ export default function App() {
           opacity={0.48}
         />
       </div>
-      <section className={'hero' + (entered ? ' hero--entered' : '')} aria-label="Script as you go">
+      <section className={'hero' + (entered ? ' hero--entered' : '')} aria-label={entered ? "Dashboard" : "Script as you go"}>
         <div className={'menu-wrap' + (entered ? ' menu-wrap--visible' : '')} aria-hidden={!entered}>
           {entered ? (
             <BranchedMenu

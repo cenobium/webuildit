@@ -1,4 +1,5 @@
-import ElasticMesh from './ElasticMesh.tsx'
+import ElasticMesh from './ElasticMesh.tsx';
+import HoldButton from './HoldButton';
 
 export default function App() {
   return (
@@ -22,8 +23,17 @@ export default function App() {
             theme="dark"
           />
         </div>
-        <p className="hint">PRESS · DRAG · RELEASE</p>
+        <div className="entry-wrap">
+          <HoldButton
+            holdTime={1600}
+            doneLabel="entered"
+            onHold={() => {}}
+            aria-label="Enter"
+          >
+            enter
+          </HoldButton>
+        </div>
       </section>
     </main>
-  )
+  );
 }
